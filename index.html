@@ -16,12 +16,21 @@
         ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         li {
             margin: 10px;
+            width: calc(50% - 20px);
             display: inline-block;
             width: 45%;
             vertical-align: top;
+        }
+        @media (max-width: 768px) {
+            li {
+                width: 100%;
+            }
         }
         a {
             text-decoration: none;
