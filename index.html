@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACSES APIs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            margin-top: 2rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px;
+            display: inline-block;
+            width: 45%;
+            vertical-align: top;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>ACSES APIs for E-Voting</h2>
+    </center>
+    <h2>Users</h2>
+    <ul>
+        <li><a href="./Users/login.html">Login</a></li>
+        <li><a href="./Users/signup.html">Signup</a></li>
+    </ul>
+    <ul>
+        <li><a href="./Users/getUsers.html">Get all users</a></li>
+        <li><a href="./Users/getDepartmentUsers.html">Get sum of users from department</a></li>
+    </ul>
+    <ul>
+        <li><a href="./Users/getUsersFullInfo.html">Get all users full information</a></li>
+        <li><a href="./Users/getUserID.html">Get user by id</a></li>
+    </ul>
+    <ul>
+        <li><a href="./Users/deleteUserID.html">Delete user by id</a></li>
+        <li><a href="./Users/updateUserID.html">Update user by id</a></li>
+    </ul>
+
+    
+    <h2>Candidates</h2>
+    <ul>
+        <li><a href="./Candidates/signup.html">Signup</a></li>
+        <li><a href="./Candidates/getCandidates.html">Get all candidates</a></li>
+    </ul>
+    <ul>
+        <li><a href="./Candidates/getCandidateIndexNumber.html">Get candidate by indexNumber</a></li>
+        <li><a href="./Candidates/deleteCandidateID.html">Delete candidate by id</a></li>
+    </ul>
+    <ul>
+        <li><a href="./Candidates/updateCandidateID.html">Update candidate by id</a></li>
+    </ul>
+
+    
+    <h2>Votes</h2>
+    <ul>
+        <li><a href="./Votes/getVotes.html">Get all votes</a></li>
+        <li><a href="./Votes/addVote.html">Add vote</a></li>
+    </ul>
+    <ul>
+        <li><a href="./Votes/resetVote.html">Reset all votes</a></li>
+        <li><a href="./Votes/getTotalVotes.html">Get total votes</a></li>
+    </ul>
+    <footer style="background-color: #f8f9fa; padding: 20px; text-align: center;">
+        <p>
+            ACSES APIs for E-Voting &copy; 
+            <script>document.write(new Date().getFullYear());</script>
+        </p>
+    </footer>
+</body>
+</html>

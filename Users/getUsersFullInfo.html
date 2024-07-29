@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get User Full Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Get User Full Info</h1>
+    <button onclick="window.location.href='../index.html'">Back to Home</button>
+    <pre>
+        {
+            "users": [
+                {
+                    "_id": "66a6de158d300f6b0914613a",
+                    "name": "Great Yosh",
+                    "email": "gy@gmail.com",
+                    "department": "mesa",
+                    "password": "$2b$10$dlyQBliKlNL.qcb3Zbltn.koVWhoaFmazhHtbkRrM60SI.Jfn9T/2",
+                    "year": "2",
+                    "indexNumber": "SRI.41.008.036.22",
+                    "lastLogin": "29/7/2024",
+                    "isVoted": false,
+                    "createdAt": "2024-07-29T00:11:01.551Z",
+                    "updatedAt": "2024-07-29T00:11:16.112Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66a3e10b7bc356a6d537e3c0",
+                    "name": "Yaẇ Bonsu",
+                    "email": "yb@gmail.com",
+                    "department": "eleesa",
+                    "password": "$2b$10$FRdBPAsNaQjV.B8QLUuzE.6Tggw5s3DXtqJY5Juw2q4xWDB/gBMby",
+                    "year": "4",
+                    "indexNumber": "SRI.41.010.040.21",
+                    "lastLogin": "26/7/2024",
+                    "createdAt": "2024-07-26T17:46:51.062Z",
+                    "updatedAt": "2024-07-26T17:47:45.328Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66a2eaf3976659299e3abdbb",
+                    "name": "Maame L3",
+                    "email": "ml@dbee.com",
+                    "department": "mesa",
+                    "password": "$2b$10$abrsie97IKTn6bCj6f5mCeg.QpbwndRdNSueTnMQ8KkHz9pFS.fzG",
+                    "year": "3",
+                    "indexNumber": "SRI.41.009.040.21",
+                    "lastLogin": "26/7/2024",
+                    "createdAt": "2024-07-26T00:16:51.406Z",
+                    "updatedAt": "2024-07-26T00:17:21.014Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "669d7e7e4ce33f68d032f68b",
+                    "name": "Baby Face",
+                    "email": "bf@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$pbXhgqQN8Xfvr5/dd7B1V.G3TbgR9uq55Zw7hkXiRlyQs52z37qcC",
+                    "year": "2",
+                    "indexNumber": "SRI.41.008.040.22",
+                    "lastLogin": "26/7/2024",
+                    "createdAt": "2024-07-21T21:32:46.797Z",
+                    "updatedAt": "2024-07-26T11:51:42.932Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66944c361db085d5e3b943ac",
+                    "name": "Kweku Bonsu",
+                    "email": "kb@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$6sxItqJc4fpL4xKQJ8Q9L.lfPqpB5Pk3kkVEk/S81Krrak4/Mlk5C",
+                    "year": "2",
+                    "indexNumber": "SRI.41.008.000.21",
+                    "lastLogin": "14/6/2024",
+                    "createdAt": "2024-07-14T22:07:50.408Z",
+                    "updatedAt": "2024-07-14T22:07:50.408Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66885f7ec1606f11c6c6bd38",
+                    "name": "Hagan Rodney",
+                    "email": "haganrodney@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$ytgQ2I1qByEiWu4LQvUDdOvNpJKe/q74F.Oabqn.4QB1e0gI6vvjG",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.055.21",
+                    "lastLogin": "26/7/2024",
+                    "createdAt": "2024-07-05T21:02:54.533Z",
+                    "updatedAt": "2024-07-26T17:48:04.040Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66885f57c1606f11c6c6bd36",
+                    "name": "Kenneth Gbogboh",
+                    "email": "kgbogboh@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$I6zn5f6bkVjs.p1hHQd5Z..1dkIRMZEEXdDybwrTQMWbibtXdw4.C",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.053.21",
+                    "lastLogin": "5/6/2024",
+                    "createdAt": "2024-07-05T21:02:15.334Z",
+                    "updatedAt": "2024-07-05T21:02:15.334Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66885f0cc1606f11c6c6bd34",
+                    "name": "Clinton Tetteh",
+                    "email": "clintont@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$oKAWhOpmvcdOfKSOa2VAPuhAQEV.YmjoR8XTIqnmL6/d.HEcnKYbK",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.052.21",
+                    "lastLogin": "5/6/2024",
+                    "createdAt": "2024-07-05T21:01:00.817Z",
+                    "updatedAt": "2024-07-05T21:01:00.817Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66885ecac1606f11c6c6bd32",
+                    "name": "Berdie Enoch",
+                    "email": "berdieenoch@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$Km/m2qLJhBvYOzijyyKBQO79wD9qm7x5A3xSsqmDJa2d8wOSau6hy",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.041.21",
+                    "lastLogin": "5/6/2024",
+                    "createdAt": "2024-07-05T20:59:54.755Z",
+                    "updatedAt": "2024-07-05T20:59:54.755Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66885e88c1606f11c6c6bd2e",
+                    "name": "Amponsah Nana Yaw",
+                    "email": "nanayaw@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$TibVhFderEz97ZM2ssZIde7fGqepxI4OM04Z00LYOzo44E.QGSKaO",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.022.21",
+                    "lastLogin": "8/7/2024",
+                    "createdAt": "2024-07-05T20:58:48.067Z",
+                    "updatedAt": "2024-07-08T08:41:02.531Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66885e3cc1606f11c6c6bd2c",
+                    "name": "Amoah Emmanuel",
+                    "email": "amoahemma@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$tJZZwPWxBUCoePOUj4YUmePjH1d8JZ3F/aAGPwwPsBRwqQhaw4Eyu",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.021.21",
+                    "lastLogin": "8/7/2024",
+                    "createdAt": "2024-07-05T20:57:32.921Z",
+                    "updatedAt": "2024-07-08T06:29:47.362Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66885df5c1606f11c6c6bd2a",
+                    "name": "Amoah Akwesi",
+                    "email": "akwesiamoah@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$YHcijUpT1Ebl3S4D7o/.yu9YADhukhkUXwUlUN219WcJK3VCLREQK",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.020.21",
+                    "lastLogin": "8/7/2024",
+                    "createdAt": "2024-07-05T20:56:21.041Z",
+                    "updatedAt": "2024-07-08T06:23:35.951Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "6687146739763fa90d9f8d8c",
+                    "name": "Lawson Buabassah",
+                    "email": "lb@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$KQl1zXe/c1qeZ/yfxMA5lu5fv8s/sw6.61NBKCjW4b21EZKYysmfi",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.044.21",
+                    "lastLogin": "8/7/2024",
+                    "createdAt": "2024-07-04T21:30:15.301Z",
+                    "updatedAt": "2024-07-08T06:19:47.335Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66857fba2e90de55612389d2",
+                    "name": "Oduro Samuel",
+                    "email": "sm@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$JXVTqWrSmwSw3JzhOk5bG.2JJKPAXBzKzVEeRJ5nsvXKcRiapJSSK",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.043.21",
+                    "lastLogin": "3/6/2024",
+                    "createdAt": "2024-07-03T16:43:38.515Z",
+                    "updatedAt": "2024-07-03T16:43:38.515Z",
+                    "__v": 0
+                },
+                {
+                    "isVoted": false,
+                    "_id": "66854dba77edc08fea85958c",
+                    "name": "Bankah Anthony",
+                    "email": "antqueenbankah95@gmail.com",
+                    "department": "acses",
+                    "password": "$2b$10$X036LvYmYIr0QRuXPmGV3uSVwoLaZTSR1RfSAyF04B3H4chIqE2HC",
+                    "year": "3",
+                    "indexNumber": "SRI.41.008.040.21",
+                    "lastLogin": "8/7/2024",
+                    "createdAt": "2024-07-03T13:10:18.943Z",
+                    "updatedAt": "2024-07-08T06:18:50.469Z",
+                    "__v": 0
+                }
+            ],
+            "candidates": [
+                {
+                    "_id": "66886386c1606f11c6c6bd4f",
+                    "indexNumber": "SRI.41.008.055.21",
+                    "position": "PRO",
+                    "votes": 4,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of the PRO",
+                    "createdAt": "2024-07-05T21:20:06.081Z",
+                    "updatedAt": "2024-07-21T21:36:15.183Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "66886381c1606f11c6c6bd4c",
+                    "indexNumber": "SRI.41.008.053.21",
+                    "position": "PRO",
+                    "votes": 3,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of the PRO",
+                    "createdAt": "2024-07-05T21:20:01.370Z",
+                    "updatedAt": "2024-07-08T08:41:19.560Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "66886360c1606f11c6c6bd49",
+                    "indexNumber": "SRI.41.008.041.21",
+                    "position": "Financial Secretary",
+                    "votes": 4,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of the Financial Secretary",
+                    "createdAt": "2024-07-05T21:19:28.584Z",
+                    "updatedAt": "2024-07-08T08:41:19.560Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "6688635ac1606f11c6c6bd46",
+                    "indexNumber": "SRI.41.008.022.21",
+                    "position": "Financial Secretary",
+                    "votes": 3,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of the Financial Secretary",
+                    "createdAt": "2024-07-05T21:19:22.197Z",
+                    "updatedAt": "2024-07-21T21:36:15.183Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "66886338c1606f11c6c6bd43",
+                    "indexNumber": "SRI.41.008.021.21",
+                    "position": "Secretary",
+                    "votes": 3,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of the Secretary",
+                    "createdAt": "2024-07-05T21:18:48.878Z",
+                    "updatedAt": "2024-07-08T06:24:42.334Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "66886334c1606f11c6c6bd40",
+                    "indexNumber": "SRI.41.008.020.21",
+                    "position": "Secretary",
+                    "votes": 4,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of the Secretary",
+                    "createdAt": "2024-07-05T21:18:44.258Z",
+                    "updatedAt": "2024-07-21T21:36:15.183Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "668862f6c1606f11c6c6bd3d",
+                    "indexNumber": "SRI.41.008.052.21",
+                    "position": "President",
+                    "votes": 4,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of the President",
+                    "createdAt": "2024-07-05T21:17:42.150Z",
+                    "updatedAt": "2024-07-21T21:36:15.183Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "667a0884c4e6241419565fb3",
+                    "indexNumber": "SRI.41.008.043.21",
+                    "position": "Project Manager",
+                    "votes": 3,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of Project Manager",
+                    "createdAt": "2024-06-25T00:00:04.480Z",
+                    "updatedAt": "2024-07-21T21:36:15.183Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "667a07f66e247bbf9ecb3774",
+                    "indexNumber": "SRI.41.008.044.21",
+                    "position": "President",
+                    "votes": 3,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of President",
+                    "createdAt": "2024-06-24T23:57:42.440Z",
+                    "updatedAt": "2024-07-08T08:41:19.560Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "667a07b36e247bbf9ecb3770",
+                    "indexNumber": "SRI.41.008.040.21",
+                    "position": "Project Manager",
+                    "votes": 4,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of Project Manager",
+                    "createdAt": "2024-06-24T23:56:35.989Z",
+                    "updatedAt": "2024-07-08T08:41:19.560Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "66944c888c471b103f35e0d6",
+                    "indexNumber": "SRI.41.008.000.21",
+                    "position": "Sports Chairman",
+                    "votes": 7,
+                    "photo": "passportPicture",
+                    "bio": "Aspiring for the position of Sports Chairman",
+                    "updatedAt": "2024-07-21T21:36:15.183Z"
+                }
+            ],
+            "votes": [
+                {
+                    "_id": "669d7f4f4ce33f68d032f6a9",
+                    "candiate_indexNumber": [
+                        "SRI.41.008.052.21",
+                        "SRI.41.008.020.21",
+                        "SRI.41.008.022.21",
+                        "SRI.41.008.055.21",
+                        "SRI.41.008.043.21",
+                        "SRI.41.008.000.21"
+                    ],
+                    "voters_id": "669d7e7e4ce33f68d032f68b",
+                    "createdAt": "2024-07-21T21:36:15.161Z",
+                    "updatedAt": "2024-07-21T21:36:15.161Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "668ba62f8087a492afbfbac6",
+                    "candiate_indexNumber": [
+                        "SRI.41.008.044.21",
+                        "SRI.41.008.020.21",
+                        "SRI.41.008.041.21",
+                        "SRI.41.008.053.21",
+                        "SRI.41.008.040.21"
+                    ],
+                    "voters_id": "66885e88c1606f11c6c6bd2e",
+                    "createdAt": "2024-07-08T08:41:19.549Z",
+                    "updatedAt": "2024-07-08T08:41:19.549Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "668b862a38349d02cf0a8e75",
+                    "candiate_indexNumber": [
+                        "SRI.41.008.052.21",
+                        "SRI.41.008.021.21",
+                        "SRI.41.008.022.21",
+                        "SRI.41.008.053.21",
+                        "SRI.41.008.040.21"
+                    ],
+                    "voters_id": "66885e3cc1606f11c6c6bd2c",
+                    "createdAt": "2024-07-08T06:24:42.324Z",
+                    "updatedAt": "2024-07-08T06:24:42.324Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "668b854938349d02cf0a8e38",
+                    "candiate_indexNumber": [
+                        "SRI.41.008.052.21",
+                        "SRI.41.008.020.21",
+                        "SRI.41.008.041.21",
+                        "SRI.41.008.055.21",
+                        "SRI.41.008.040.21"
+                    ],
+                    "voters_id": "66885df5c1606f11c6c6bd2a",
+                    "createdAt": "2024-07-08T06:20:57.214Z",
+                    "updatedAt": "2024-07-08T06:20:57.214Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "6688bdb62c1f14c2eb5b505f",
+                    "candiate_indexNumber": [
+                        "SRI.41.008.044.21",
+                        "SRI.41.008.020.21",
+                        "SRI.41.008.022.21",
+                        "SRI.41.008.055.21",
+                        "SRI.41.008.043.21"
+                    ],
+                    "voters_id": "6687146739763fa90d9f8d8c",
+                    "createdAt": "2024-07-06T03:44:54.722Z",
+                    "updatedAt": "2024-07-06T03:44:54.722Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "6688bd232c1f14c2eb5b4ec6",
+                    "candiate_indexNumber": [
+                        "SRI.41.008.044.21",
+                        "SRI.41.008.021.21",
+                        "SRI.41.008.041.21",
+                        "SRI.41.008.053.21",
+                        "SRI.41.008.040.21"
+                    ],
+                    "voters_id": "66854dba77edc08fea85958c",
+                    "createdAt": "2024-07-06T03:42:27.846Z",
+                    "updatedAt": "2024-07-06T03:42:27.846Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "6688b7102c1f14c2eb5b41e2",
+                    "candiate_indexNumber": [
+                        "SRI.41.008.052.21",
+                        "SRI.41.008.021.21",
+                        "SRI.41.008.041.21",
+                        "SRI.41.008.055.21",
+                        "SRI.41.008.043.21"
+                    ],
+                    "voters_id": "66885f7ec1606f11c6c6bd38",
+                    "createdAt": "2024-07-06T03:16:32.808Z",
+                    "updatedAt": "2024-07-06T03:16:32.808Z",
+                    "__v": 0
+                }
+            ]
+        }
+    </pre>
+</body>
+
+</html>
