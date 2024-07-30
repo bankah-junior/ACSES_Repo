@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Site Mode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Site Mode</h1>
+    <center>
+        <span style="color: #00ff00; font-weight: bold; padding-right: 1rem;">[ GET ]</span>
+        <a style="color: #000; text-decoration: none; cursor: default;">http://localhost:7000/api/users/updateSiteMode</a>
+    </center>
+    <button onclick="window.location.href='../index.html'">Back to Home</button>
+    <pre>
+        {
+            "_id": "66a8bda6ceaa28b166ba303e",
+            "siteMode": "Voting",
+            "updatedAt": "2024-07-30T10:51:41.922Z"
+        }
+    </pre>
+</body>
+</html>
